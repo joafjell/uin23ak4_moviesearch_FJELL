@@ -1,3 +1,7 @@
 export default function SearchResults(){
-    return
+    return(
+        <form onSubmit="getMovies">
+
+        </form>
+    )
 }
