@@ -5,7 +5,7 @@ export default function Layout(){
         <div id="container">
             <header>
                 <Link to="/">
-                    <h1>Filmer</h1>
+                    <h1>Filmside</h1>
                 </Link>
             </header>
             <main>
