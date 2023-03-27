@@ -1,6 +1,4 @@
 export default function SearchResults({setSearch, getMovies}){
-
-    console.log(getMovies, "2")
     
     const handleSubmit = (event) => {
         event.preventDefault()

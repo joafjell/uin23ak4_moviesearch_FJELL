@@ -7,9 +7,9 @@ export default function MovieSite({movies}){
     return(
         <section>
             <h1>{movie?.movie.label}</h1>
-            <img src={movie?.movie.image} alt={movie?.movie.label}/>
+            <img src={movie?.movie.poster} alt={movie?.movie.label}/>
             <ul>
-            
+
             </ul>
         </section>
     )
