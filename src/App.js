@@ -9,7 +9,7 @@ import MoviesMainPage from './components/MoviesMainPage';
 
 function App() {
 
-  const [movies, setMovies] = useState([])
+  const [title, setMovies] = useState([])
   const [search, setSearch] = useState('James Bond')
 
   const getMovies = async() =>{
@@ -22,13 +22,13 @@ function App() {
     getMovies()
   }, [])
 
-  console.log(movies)
+  console.log(title)
 
   return (
     <Routes>
       <Route element={<Layout/>}>
-        <Route index element={<MoviesMainPage movies={movies} setSearch={setSearch} getMovies={getMovies}/>}/>
-        <Route path=':slug' element={<MovieSite movies={movies}/>}/>
+        <Route index element={<MoviesMainPage movies={title} setSearch={setSearch} getMovies={getMovies}/>}/>
+        <Route path=':slug' element={<MovieSite movies={title}/>}/>
       </Route>
     </Routes>
   );

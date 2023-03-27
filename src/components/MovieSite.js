@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom"
 
-export default function MovieSite({movies}){
+export default function MovieSite({title}){
     const {slug} = useParams()
-    const movie = movies.find((m) => m?.movie?.label.replace(/\s/g, "-").toLowercase() === slug)
+    const movie = title.find((m) => m?.movie?.label.replace(/\s/g, "-").toLowercase() === slug)
     
     return(
         <section>
