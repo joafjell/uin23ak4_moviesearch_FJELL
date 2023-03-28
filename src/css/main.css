@@ -1,5 +1,66 @@
-body {
-  color: blue;
+* {
+  box-sizing: border-box;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvbWFpbi5zY3NzIiwibWFpbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFBSyxXQUFBO0FDRUwiLCJmaWxlIjoibWFpbi5jc3MifQ== */
+a:link {
+  text-decoration: none;
+}
+
+.search {
+  padding-bottom: 3rem;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+article {
+  padding-left: 2rem;
+  max-width: 500px;
+  width: 100%;
+  border-left: 4px black;
+  border-bottom: 4px black;
+  border-right: 4px black;
+  border-top: 4px black;
+  border-style: outset;
+}
+
+body {
+  color: Black;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.h2-title {
+  padding-left: 1rem;
+}
+
+.images {
+  width: 250px;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.search-bar {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sideTitle {
+  color: black;
+  padding-left: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

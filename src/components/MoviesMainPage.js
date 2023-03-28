@@ -6,10 +6,11 @@ export default function MoviesMainPage({movies, setSearch, getMovies}){
         <>
             <SearchResults setSearch={setSearch} getMovies={getMovies}/>
             <section>
-                <h2>Filmer</h2>
-                    {movies.map((movie, index) => (
-                        <MovieCards key={index} title={movie?.movie?.title} img={movie?.movie?.poster} slug={movie?.movie?.label.replace(/\s/g, "-").toLowerCase()}/>
-                    ))}
+                    {movies?.map((movie, index) => {
+                        const {Title, Poster, Year, Type} = movie;
+                        console.log(movie);
+                        return  <MovieCards key={index} title={Title} img={Poster} year={Year} type={Type} slug={movie?.movie?.label.replace(/\s/g, "-").toLowerCase()}/>
+                    })}
             </section>
         </>
     );
