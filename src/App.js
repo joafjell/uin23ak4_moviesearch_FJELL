@@ -13,7 +13,7 @@ function App() {
   const [search, setSearch] = useState('James Bond')
 
   const getMovies = async() =>{
-    const response = await fetch(`http://www.omdbapi.com/?s=${search}&apikey=e3f58a23`)
+    const response = await fetch(`http://www.omdbapi.com/?s=${search}&type=movie&apikey=e3f58a23`)
     const movieInformation = await response.json()
     setMovies(movieInformation.Search)
   }
