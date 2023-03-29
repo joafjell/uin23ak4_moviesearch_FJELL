@@ -8,13 +8,12 @@ export default function MovieSite({movies}){
         .then(response => response.json())
         .then(data => console.log(data, "2"))
 
-    const data = {
-        Actors: "Guppi, Hindi, Suri"
-    }
+    
+        
 
     return(
         <section>
-            <h2>{movie?.movie?.title}</h2>
+            
             <img src={movie?.movie.poster} alt={movie?.movie.title}/>
             <p>Skuespillere: </p>
             <ul>

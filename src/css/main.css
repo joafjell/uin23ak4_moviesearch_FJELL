@@ -16,14 +16,14 @@ a:link {
   padding-bottom: 3rem;
 }
 
-section {
+.mainpage-movie {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-article {
-  padding-left: 2rem;
+.movie-card {
+  padding: 0 0 2rem 8rem;
   max-width: 500px;
   width: 100%;
 }
@@ -48,7 +48,7 @@ header {
 }
 
 .images {
-  width: 250px;
+  width: 200px;
 }
 
 main {
@@ -61,7 +61,7 @@ main {
 }
 
 .search-bar {
-  padding: 2rem 0 1rem 8.3rem;
+  padding: 2rem 0 1rem 8rem;
 }
 
 .search-button {
@@ -75,7 +75,7 @@ main {
 
 .sideTitle {
   color: black;
-  padding-left: 8.3rem;
+  padding-left: 8rem;
 }
 
 .type-name {
