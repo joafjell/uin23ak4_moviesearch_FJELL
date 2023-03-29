@@ -1,3 +1,9 @@
+:root {
+  --black: 000000;
+  --max-width: 1500px;
+  --baby-blue: rgb(137, 207, 240);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -20,21 +26,21 @@ article {
   padding-left: 2rem;
   max-width: 500px;
   width: 100%;
-  border-left: 4px black;
-  border-bottom: 4px black;
-  border-right: 4px black;
-  border-top: 4px black;
-  border-style: outset;
 }
 
 body {
-  color: Black;
+  color: var(--black);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: var(--max-width);
   width: 100%;
   margin: 0 auto;
+}
+
+header {
+  background-color: var(--baby-blue);
+  padding: 5px 0 5px 0;
 }
 
 .h2-title {
@@ -47,20 +53,33 @@ body {
 
 main {
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--max-width);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  background-color: white;
 }
 
 .search-bar {
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0 1rem 8.3rem;
+}
+
+.search-button {
+  height: 30px;
+}
+
+.search-field {
+  height: 30px;
+  width: 500px;
 }
 
 .sideTitle {
   color: black;
-  padding-left: 2rem;
+  padding-left: 8.3rem;
+}
+
+.type-name {
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=main.css.map */

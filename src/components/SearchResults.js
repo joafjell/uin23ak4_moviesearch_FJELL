@@ -12,8 +12,8 @@ export default function SearchResults({setSearch, getMovies}){
 
     return(
         <form onSubmit={handleSubmit} className="search-bar">
-            <input type="search" placeholder="Search for movie" onChange={handleSearch}/>
-            <input type="submit" value="search"></input>
+            <input type="search" className="search-field" placeholder="Search for a movie" onChange={handleSearch}/>
+            <input type="submit" className="search-button" value="search"></input>
         </form>
     )
 }
