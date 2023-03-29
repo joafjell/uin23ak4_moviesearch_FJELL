@@ -10,8 +10,7 @@ export default function MovieSite({movies}){
         .then(response => response.json())
         .then(movieInfo => console.log(movieInfo, "2"))
     
- 
-    
+    console.log("2", movies)
     /*const getMovieInfo = async() => {
         const response = await fetch(`http://www.omdbapi.com/?apikey=e3f58a23&i=${slug}`)
         const movieInf = await response.json()

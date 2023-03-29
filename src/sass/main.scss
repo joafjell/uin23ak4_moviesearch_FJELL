@@ -1,7 +1,7 @@
 :root{
-    --black: 000000;
+    --black: rgb(0, 0, 0);
     --max-width: 1500px;
-    --baby-blue: rgb(137, 207, 240);
+    --font-family: arial;
 }
 
 * {
@@ -12,6 +12,11 @@ a:link {
     text-decoration: none;
 }
 
+h2{
+    font-size: 30px;
+    font-family: var(--font-family);
+}
+
 .search{
     padding-bottom: 3rem;
 }
@@ -19,38 +24,52 @@ a:link {
 .mainpage-movie{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    margin: 0 auto;
+    
 }
 
 .movie-card{
-    padding: 0 0 2rem 8rem;
+    display:flex;
+    flex-direction: column;
+    padding: 0 0 2rem 5rem;
     max-width: 500px;
     width: 100%;
+    h2{
+        padding-left: 1rem;
+    }
+    .images{ 
+        padding-left: 1rem;
+        
+    }
+    p{
+        padding-left: 1rem;
+    }
+
     
 }
 
 body{
     color:var(--black);
+
+
 }
 
 .container{
-    max-width: var(--max-width);
     width: 100%;
-    margin: 0 auto;
 }
 
 header{
-    background-color: var(--baby-blue);
     padding: 5px 0 5px 0;
+    text-align: center;
 }
 
 .h2-title{
     padding-left: 1rem;
 }
 
-.images{
+/*.images{
     width: 200px;
-}
+}*/
 
 main{
     width: 100%;
@@ -58,29 +77,40 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: white;
-    
+    margin: 0 auto;
+}
+
+p{
+    font-size: 17px;
+    font-family: var(--font-family);
 }
 
 .search-bar{
-    padding: 2rem 0 1rem 8rem;
+    padding: 1.5rem 0 1.5rem 0;
+    margin: 0 auto;
     
 }
 
 .search-button{
-    height: 30px;
+    height: 40px;
+    width: 55px;
 }
 
 .search-field{
-    height: 30px;
-    width: 500px;
+    height: 40px;
+    width: 600px;
+
 }
 
-.sideTitle{
+.pageTitle{
     color:black;
-    padding-left: 8rem;
+    
 }
 
 .type-name{
     text-transform:capitalize;
+}
+
+@media only screen and (max-width:480px) {
+
 }
